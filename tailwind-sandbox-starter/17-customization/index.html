@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+
+        fontFamily: {
+          'sans': ['Graphik', 'sans-serif'],
+          'serif': ['Merriweather', 'serif'],
+        },
+        extend: {
+          screens: {
+            'sm': '550px',
+            'md': '800px',
+            'lg': '1024px',
+            'xl': '1200px',
+            '2xl': '1440px',
+          },
+          colors: {
+            primary: {
+              50: '#ffe6e1',
+              100: '#ffc2b3',
+              200: '#ff9980',
+              300: '#ff704d',
+              400: '#ff471a',
+              500: '#ff5733',
+              600: '#ff1a00',
+              700: '#e60000',
+              800: '#b30000',
+              900: '#800000',
+            },
+            secondary: {
+              50: '#fffff2',
+              100: '#ffffe6',
+              200: '#ffffb3',
+              300: '#ffff66',
+              400: '#ffff00',
+              500: '#fffc33',
+              600: '#fffa00',
+              700: '#e6e600',
+              800: '#b3b300',
+              900: '#808000',
+            },
+          },
+          spacing: {
+            6: '2.5rem',
+            128: '32rem',
+          },
+          borderRadius: {
+            '4xl': '2rem',
+          },
+          borderWidth: {
+            6: '6px',
+          },
+          boxShadow: {
+            '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+          },
+          fontSize: {
+            '7xl': '5rem',
+          },
+          inset: {
+            100: '100%',
+          },
+          letterSpacing: {
+            widest: '.25em',
+          },
+          lineHeight: {
+            tighter: '1.125',
+          },
+          maxWidth: {
+            '8xl': '90rem',
+          },
+          opacity: {
+            90: '0.9',
+          },
+          zIndex: {
+            '-10': '-10',
+          }
+        },
+      }
+    }
+  </script>
+  <title>Customization</title>
+</head>
+
+<body class="bg-black sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800">
+
+
+  <div class="border-secondary-400 border-2 p-6 mb-128">
+    <h1 class="text-primary-500 text-xl"></h1>
+  </div>
+  <script>
+    function showBrowserWidth() {
+      const width = window.innerWidth
+
+      document.querySelector('h1').innerHTML = `Width: ${width}`
+    }
+
+    window.onload = showBrowserWidth
+    window.onresize = showBrowserWidth
+  </script>
+</body>
+
+</html>
+
+<!-- Breakpoint Classes
+    sm	640px	  @media (min-width: 640px) { ... }
+    md	768px	  @media (min-width: 768px) { ... }
+    lg	1024px	@media (min-width: 1024px) { ... }
+    xl	1280px	@media (min-width: 1280px) { ... }
+    2xl	1536px	@media (min-width: 1536px) { ... }
+  -->

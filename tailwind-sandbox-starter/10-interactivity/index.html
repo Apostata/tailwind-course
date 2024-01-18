@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Interactivity</title>
+</head>
+
+<body>
+  <!-- Hover State Styling -->
+  <button class="bg-black text-white py-3 px-5m-3 rounded-lg min-w-24 hover:bg-orange-500 hover:text-white">
+    Hover
+  </button>
+  <!-- Focus State Styling -->
+  <button class="bg-black text-white py-3 px-5m-3 rounded-lg min-w-24 focus:bg-green-500 focus:text-white">
+    Focus
+  </button>
+  <!-- Active State Styling -->
+  <button class="bg-black text-white py-3 px-5m-3 rounded-lg min-w-24 active:bg-yellow-500 active:text-black">
+    Active
+  </button>
+  <!-- Styling based on parent state -->
+  <a href="" class="group block max-w-sm my-4 mx-auto rounded-lg p-6 bg-white shadow-lg space-y-3 hover:bg-sky-500">
+    <h3 class="group-hover:text-white">Group hover</h3>
+    <p class="group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, non.</p>
+  </a>
+  <!-- Pseudo Classes -->
+  <ul class="[&>li:first-child]:bg-red-200 [&>li:last-child]:bg-blue-200">
+    <li class="even:bg-green-200 odd:bg-orange-200">Item </li>
+    <li class="even:bg-green-200 odd:bg-orange-200 ">Item </li>
+    <li class="even:bg-green-200 odd:bg-orange-200 ">Item </li>
+    <li class="even:bg-green-200 odd:bg-orange-200 ">Item </li>
+    <li class="even:bg-green-200 odd:bg-orange-200 ">Item </li>
+    <li class="even:bg-green-200 odd:bg-orange-200">Item </li>
+  </ul>
+  <!-- Appearance -->
+
+  <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+  <select name="teste" id="teste" class="appearance-none">
+    <option value="yes">yes</option>
+    <option value="no">no</option>
+  </select>
+  <!-- Cursor -->
+  <div class="flex">
+    <p class="block bg-black text-white py-3 px-5 m-3 rounded-lg min-w-24 cursor-wait">Cursors wait</p>
+    <p class="block bg-black text-white py-3 px-5 m-3 rounded-lg min-w-24 cursor-not-allowed">Cursors not
+      alowed</p>
+
+  </div>
+  <div class="flex flex-col mb-6">
+    <p class="select-none">Select None</p>
+    <p class="select-text">Select Text</p>
+    <p class="select-all">Select All</p>
+    <p class="select-auto">Select Auto(default)</p>
+  </div>
+  <a href="#item" class="block my-6">Go to item</a>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident adipisci incidunt enim, deserunt placeat,
+    possimus saepe quibusdam amet facere, commodi totam dolores ea debitis impedit autem illum culpa odit voluptatum
+    itaque et molestiae quo. Distinctio laudantium ratione, odit quam laboriosam modi fugit beatae, tempore in iusto
+    illum placeat repudiandae consequuntur unde iure suscipit atque ullam magni dolor numquam ipsam. Enim sunt fugiat
+    quos autem reprehenderit! Ipsam ipsa numquam obcaecati porro reiciendis saepe, nulla incidunt iure quibusdam harum
+    perspiciatis eum? Maxime aspernatur quasi assumenda eligendi at cumque pariatur illo iure adipisci quia, culpa
+    voluptatem a unde officia. Nisi totam in magnam!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident adipisci incidunt enim, deserunt placeat,
+    possimus saepe quibusdam amet facere, commodi totam dolores ea debitis impedit autem illum culpa odit voluptatum
+    itaque et molestiae quo. Distinctio laudantium ratione, odit quam laboriosam modi fugit beatae, tempore in iusto
+    illum placeat repudiandae consequuntur unde iure suscipit atque ullam magni dolor numquam ipsam. Enim sunt fugiat
+    quos autem reprehenderit! Ipsam ipsa numquam obcaecati porro reiciendis saepe, nulla incidunt iure quibusdam harum
+    perspiciatis eum? Maxime aspernatur quasi assumenda eligendi at cumque pariatur illo iure adipisci quia, culpa
+    voluptatem a unde officia. Nisi totam in magnam!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident adipisci incidunt enim, deserunt placeat,
+    possimus saepe quibusdam amet facere, commodi totam dolores ea debitis impedit autem illum culpa odit voluptatum
+    itaque et molestiae quo. Distinctio laudantium ratione, odit quam laboriosam modi fugit beatae, tempore in iusto
+    illum placeat repudiandae consequuntur unde iure suscipit atque ullam magni dolor numquam ipsam. Enim sunt fugiat
+    quos autem reprehenderit! Ipsam ipsa numquam obcaecati porro reiciendis saepe, nulla incidunt iure quibusdam harum
+    perspiciatis eum? Maxime aspernatur quasi assumenda eligendi at cumque pariatur illo iure adipisci quia, culpa
+    voluptatem a unde officia. Nisi totam in magnam!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident adipisci incidunt enim, deserunt placeat,
+    possimus saepe quibusdam amet facere, commodi totam dolores ea debitis impedit autem illum culpa odit voluptatum
+    itaque et molestiae quo. Distinctio laudantium ratione, odit quam laboriosam modi fugit beatae, tempore in iusto
+    illum placeat repudiandae consequuntur unde iure suscipit atque ullam magni dolor numquam ipsam. Enim sunt fugiat
+    quos autem reprehenderit! Ipsam ipsa numquam obcaecati porro reiciendis saepe, nulla incidunt iure quibusdam harum
+    perspiciatis eum? Maxime aspernatur quasi assumenda eligendi at cumque pariatur illo iure adipisci quia, culpa
+    voluptatem a unde officia. Nisi totam in magnam!</p>
+  <p id="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident adipisci incidunt enim, deserunt
+    placeat,
+    possimus saepe quibusdam amet facere, commodi totam dolores ea debitis impedit autem illum culpa odit voluptatum
+    itaque et molestiae quo. Distinctio laudantium ratione, odit quam laboriosam modi fugit beatae, tempore in iusto
+    illum placeat repudiandae consequuntur unde iure suscipit atque ullam magni dolor numquam ipsam. Enim sunt fugiat
+    quos autem reprehenderit! Ipsam ipsa numquam obcaecati porro reiciendis saepe, nulla incidunt iure quibusdam harum
+    perspiciatis eum? Maxime aspernatur quasi assumenda eligendi at cumque pariatur illo iure adipisci quia, culpa
+    voluptatem a unde officia. Nisi totam in magnam!</p>
+
+  <!-- Resize -->
+
+  <!-- User Select -->
+
+  <!-- Smooth Scroll Example -->
+</body>
+
+</html>
+
+<!-- Cursor
+  cursor-auto	          cursor: auto;
+  cursor-default	      cursor: default;
+  cursor-pointer	      cursor: pointer;
+  cursor-wait	          cursor: wait;
+  cursor-text	          cursor: text;
+  cursor-move	          cursor: move;
+  cursor-help	          cursor: help;
+  cursor-not-allowed	  cursor: not-allowed;
+  cursor-none	          cursor: none;
+  cursor-context-menu	  cursor: context-menu;
+  cursor-progress	      cursor: progress;
+  cursor-cell	          cursor: cell;
+  cursor-crosshair	    cursor: crosshair;
+  cursor-vertical-text	cursor: vertical-text;
+  cursor-alias	        cursor: alias;
+  cursor-copy	          cursor: copy;
+  cursor-no-drop	      cursor: no-drop;
+  cursor-grab	          cursor: grab;
+  cursor-grabbing	      cursor: grabbing;
+  cursor-all-scroll	    cursor: all-scroll;
+  cursor-col-resize	    cursor: col-resize;
+  cursor-row-resize	    cursor: row-resize;
+  cursor-n-resize	      cursor: n-resize;
+  cursor-e-resize	      cursor: e-resize;
+  cursor-s-resize	      cursor: s-resize;
+  cursor-w-resize	      cursor: w-resize;
+  cursor-ne-resize	    cursor: ne-resize;
+  cursor-nw-resize	    cursor: nw-resize;
+  cursor-se-resize	    cursor: se-resize;
+  cursor-sw-resize	    cursor: sw-resize;
+  cursor-ew-resize	    cursor: ew-resize;
+  cursor-ns-resize	    cursor: ns-resize;
+  cursor-nesw-resize	  cursor: nesw-resize;
+  cursor-nwse-resize	  cursor: nwse-resize;
+  cursor-zoom-in	      cursor: zoom-in;
+  cursor-zoom-out	      cursor: zoom-out;
+-->

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        maxWidth: {
+          '1/4': '25%',
+          '1/2': '50%',
+          '3/4': '75%',
+          '1/3': '33.333333%',
+          '2/3': '66.666667%',
+        }
+      }
+    }
+  </script>
+  <title>TailwindCSS</title>
+
+</head>
+
+<body>
+  <!-- Positioning -->
+  <div class="relative h-12 bg-red-200 w-1/2">
+    <p>Parent element</p>
+    <div class="absolute bottom-0 right-0 bg-red-500">
+      <p>Child element</p>
+    </div>
+  </div>
+
+
+  <!-- Top left corner -->
+  <div class="relative h-32 w-32 bg-yellow-100 mb-4">
+    <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300">
+    </div>
+  </div>
+  <!-- Top right corner -->
+  <div class="relative h-32 w-32 bg-yellow-100 mb-4">
+    <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300">
+    </div>
+  </div>
+  <!-- Bottom left corner -->
+  <div class="relative h-32 w-32 bg-yellow-100 mb-4">
+    <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300">
+    </div>
+  </div>
+  <!-- Bottom right corner -->
+  <div class="relative h-32 w-32 bg-yellow-100 mb-4">
+    <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300">
+    </div>
+  </div>
+  <!-- Span top edge -->
+  <div class="relative h-32 w-32 bg-yellow-100 mb-4">
+    <div class="absolute inset-x-0 top-0 h-16 bg-yellow-300">
+    </div>
+  </div>
+
+  <!-- Span left edge -->
+  <div class="relative h-32 w-32 bg-yellow-100 mb-4">
+    <div class="absolute inset-y-0 left-0 w-16 bg-yellow-300">
+    </div>
+  </div>
+  <!-- Span right edge -->
+  <div class="relative h-32 w-32 bg-yellow-100 mb-4">
+    <div class="absolute inset-y-0 right-0 w-16 bg-yellow-300">
+    </div>
+  </div>
+  <!-- Span bottom edge -->
+  <div class="relative h-32 w-32 bg-yellow-100 mb-4">
+    <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-300">
+    </div>
+  </div>
+  <!-- Display Classes -->
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sunt iure reprehenderit cupiditate dicta eum
+    voluptate <span class="inline font-bold">this is Inline</span> voluptas nesciunt non facilis ad veniam libero nemo
+    atque, <span class="inline-block font-bold">this is inline-block</span> praesentium repudiandae. Ullam beatae amet
+    incidunt, recusandae veniam ipsa sit facilis <span class="block font-bold">this is block</span> voluptas odit
+    eveniet omnis quo repellendus sint? Ut
+    consequuntur culpa molestiae velit officia <span class="hidden font-bold">this is hidden</span> quos recusandae
+    blanditiis neque aut
+    dolor? Laudantium, animi! Fugit, et a?
+  </div>
+  <!-- Z-Index -->
+  <div class="relative h-36">
+    <div class="absolute w-24 h-24 bg-blue-300 left-10 z-40">
+      1
+    </div>
+    <div class="absolute w-24 h-24 bg-blue-400 left-20">
+      2
+    </div>
+    <div class="absolute w-24 h-24 bg-blue-500 left-40 z-10">
+      3
+    </div>
+    <div class="absolute w-24 h-24 bg-blue-600 left-60 z-30">
+      4
+    </div>
+    <div class="absolute w-24 h-24 bg-blue-700 left-80 z-20">
+      5
+    </div>
+  </div>
+  <!-- Floats -->
+  <div class="w-1/2 inline-block">
+    <img class=" h-48 w-48 float-left m-4 max-w-1/3" src="../assets/img/img1.jpg" alt="">
+    <p class="float-left max-w-2/3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum fugit odio est
+      repellendus
+      corporis
+      distinctio
+      fuga debitis eveniet, dolore asperiores maiores sunt eum, quos ratione quo corrupti quis impedit ullam.</p>
+  </div>
+</body>
+
+</html>
+
+<!-- Position Classes
+      static	    position: static;
+      fixed	      position: fixed;
+      absolute	  position: absolute;
+      relative	  position: relative;
+      sticky	    position: sticky;
+    -->
+
+<!-- Display Classes
+      block	            display: block;
+      inline-block	    display: inline-block;
+      inline	          display: inline;
+      flex	            display: flex;
+      inline-flex	      display: inline-flex;
+      table	            display: table;
+      grid	            display: grid;
+      inline-grid	      display: inline-grid;
+      contents	        display: contents;
+      list-item	        display: list-item;
+      hidden	          display: none;
+    -->
+
+<!-- Z-Index
+      z-0	    z-index: 0;
+      z-10	  z-index: 10;
+      z-20	  z-index: 20;
+      z-30	  z-index: 30;
+      z-40	  z-index: 40;
+      z-50	  z-index: 50;
+      z-auto	z-index: auto;
+    -->
+
+<!-- Float
+      float-right	  float: right;
+      float-left	  float: left;
+      float-none	  float: none;
+    -->
