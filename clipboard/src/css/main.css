@@ -4,10 +4,12 @@
 @tailwind utilities;
 
 body{
-	background-image: url('../images/bg-header-desktop.png');
 	
-	@media (max-width: 576px) {
-		background-image: url('../images/bg-header-mobile.png');
+	background-image: url('../images/bg-header-mobile.png');
+	
+	@media (min-width: 577px) {
+		background-image: url('../images/bg-header-desktop.png');
+		
 	}
 }
 
