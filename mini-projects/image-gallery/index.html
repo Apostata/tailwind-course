@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Gallery</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+	<div class="flex items-center justify-center min-h-screen bg-cyan-50">
+		<!-- card -->
+		<div class="bg-white m-3 p-6 shadow-xl rounded-lg space-y-10 md:p-40">
+			<!-- menu -->
+			<div
+				class="flex flex-col items-center justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 md:m-b-24 md:justify-end md:items-end">
+				<!-- menu items -->
+				<div class="group">
+					<a href="#">Vector</a>
+					<div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+				</div>
+				<div class="group">
+					<a href="#">Olustrations</a>
+					<div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+				</div>
+				<div class="group">
+					<a href="#">Images</a>
+					<div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+				</div>
+				<div class="group">
+					<a href="#">Icons</a>
+					<div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+				</div>
+			</div>
+			<!-- search container -->
+			<div class="flex flex-col justify-between items-end space-y-5 md:flex-row md:space-y-0 ">
+				<!-- material like search -->
+				<div class="flex justify-between border-b relative after:content-[''] pt-4 mb-4 max-h-12
+					after:absolute after:bottom-0 after:left-[50%] after:w-0 after:h-[1px] 
+					after:block after:bg-black duration-500 
+					after:transition-all after:duration-300
+					hover:after:w-full hover:after:left-0
+					group
+					has-[:focus]:after:w-full has-[:focus]:after:left-0 has-[:focus]:after:bg-cyan-500
+					">
+
+					<input type="text" id="search" placeholder=" "
+						class="border-none ml-6 md:w-80 focus:outline-none [:not(:placeholder-shown)&+label]:-translate-y-4 [:not(:placeholder-shown)&+label]:text-xs">
+					<label for="search" class="absolute left-0 top-5 group-focus-within:-translate-y-4 group-focus-within:text-xs transition-all duration-300 group-focus-within:text-cyan-500
+						
+							">Search</label>
+					<button>
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-8 text-gray-500 duration-200 hover:scale-110"
+							viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<circle cx="10" cy="10" r="7" />
+							<line x1="21" y1="21" x2="15" y2="15" />
+						</svg>
+					</button>
+				</div>
+				<button class="w-full py-3 px-14 text-lg font-normal text-white bg-black border border-black rounded-md shadow-2xl duration-300 
+					hover:bg-white hover:text-black 
+					md:ml-4 md:ml-0 lg:w-auto">
+					Upload
+				</button>
+
+			</div>
+
+			<!-- gallery container -->
+			<ul class="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+				<!-- image1 -->
+				<li class="relative group bg-gray-300">
+					<img src="images/image1.jpg" alt="" class="w-72 m-auto group-hover duration-300 brightness-100">
+					<div class="w-full h-full absolute bottom-0 left-0 p-2 px-4 text-white transition-all duration-300 opacity-100 bg-opacity-40 bg-white group-hover:bg-black 
+						group-hover:bg-opacity-40  group-hover:h-1/4 md:group-hover:h-1/3 group-hover:bottom-0">
+						<div class="flex justify-between w-full opacity-0 group-hover:opacity-100">
+							<div class="font-normal">
+								<p class="text-sm">Lorem, ipsum</p>
+								<p class="text-xs">245 Likes - 35 Shares</p>
+							</div>
+							<div class="flex items-center">
+								<img src="images/bookmark.svg" alt="bookmark">
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- image2 -->
+				<li class="relative group bg-gray-300">
+					<img src="images/image2.jpg" alt="" class="w-72 m-auto group-hover duration-300 brightness-100">
+					<div class="w-full h-full absolute bottom-0 left-0 p-2 px-4 text-white transition-all duration-300 opacity-100 bg-opacity-40 bg-white group-hover:bg-black 
+						group-hover:bg-opacity-40  group-hover:h-1/4 md:group-hover:h-1/3 group-hover:bottom-0">
+						<div class="flex justify-between w-full opacity-0 group-hover:opacity-100">
+							<div class="font-normal">
+								<p class="text-sm">Lorem, ipsum</p>
+								<p class="text-xs">245 Likes - 35 Shares</p>
+							</div>
+							<div class="flex items-center">
+								<img src="images/bookmark.svg" alt="bookmark">
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- image3 -->
+				<li class="relative group bg-gray-300">
+					<img src="images/image3.jpg" alt="" class="w-72 m-auto group-hover duration-300 brightness-100">
+					<div class="w-full h-full absolute bottom-0 left-0 p-2 px-4 text-white transition-all duration-300 opacity-100 bg-opacity-40 bg-white 
+						group-hover:bg-black group-hover:bg-opacity-40 group-hover:h-1/4 md:group-hover:h-1/3 group-hover:bottom-0">
+						<div class="flex justify-between w-full opacity-0 group-hover:opacity-100">
+							<div class="font-normal">
+								<p class="text-sm">Lorem, ipsum</p>
+								<p class="text-xs">245 Likes - 35 Shares</p>
+							</div>
+							<div class="flex items-center">
+								<img src="images/bookmark.svg" alt="bookmark">
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- image4 -->
+				<li class="relative group bg-gray-300">
+					<img src="images/image4.jpg" alt="" class="w-72 m-auto group-hover duration-300 brightness-100">
+					<div class="w-full h-full absolute bottom-0 left-0 p-2 px-4 text-white transition-all duration-300 opacity-100 bg-opacity-40 bg-white 
+						group-hover:bg-black group-hover:bg-opacity-40 group-hover:h-1/4 md:group-hover:h-1/3 group-hover:bottom-0">
+						<div class="flex justify-between w-full opacity-0 group-hover:opacity-100">
+							<div class="font-normal">
+								<p class="text-sm">Lorem, ipsum</p>
+								<p class="text-xs">245 Likes - 35 Shares</p>
+							</div>
+							<div class="flex items-center">
+								<img src="images/bookmark.svg" alt="bookmark">
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- image5 -->
+				<li class="relative group bg-gray-300">
+					<img src="images/image5.jpg" alt="" class="w-72 m-auto group-hover duration-300 brightness-100">
+					<div class="w-full h-full absolute bottom-0 left-0 p-2 px-4 text-white transition-all duration-300 opacity-100 bg-opacity-40 bg-white 
+						group-hover:bg-black group-hover:bg-opacity-40 group-hover:h-1/4 md:group-hover:h-1/3">
+						<div class="flex justify-between w-full opacity-0 group-hover:opacity-100">
+							<div class="font-normal">
+								<p class="text-sm">Lorem, ipsum</p>
+								<p class="text-xs">245 Likes - 35 Shares</p>
+							</div>
+							<div class="flex items-center">
+								<img src="images/bookmark.svg" alt="bookmark">
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- image6 -->
+				<li class="relative group bg-gray-300">
+					<img src="images/image6.jpg" alt="" class="w-72 m-auto group-hover duration-300 brightness-100">
+					<div class="w-full h-full absolute bottom-0 left-0 p-2 px-4 text-white transition-all duration-300 opacity-100 bg-opacity-40 bg-white 
+						group-hover:bg-black group-hover:bg-opacity-40  group-hover:h-1/4 md:group-hover:h-1/3 group-hover:bottom-0">
+						<div class="flex justify-between w-full opacity-0 group-hover:opacity-100">
+							<div class="font-normal">
+								<p class="text-sm">Lorem, ipsum</p>
+								<p class="text-xs">245 Likes - 35 Shares</p>
+							</div>
+							<div class="flex items-center">
+								<img src="images/bookmark.svg" alt="bookmark">
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>

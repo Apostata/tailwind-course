@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Modal</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ['Mulish', 'sans-serif'],
+          mono: ['Rokkitt', 'monospace'],
+        },
+      },
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Global Container -->
+  <div class="flex items-center justify-center min-h-screen bg-rose-50">
+    <!-- card container -->
+    <div class="relative flex flex-col m-6 bg-white rounded-2xl shadow-2xl md:flex-row md:m-0">
+      <!-- close button -->
+      <button class="z-20 group absolute top-4 right-4 flex items-center justify-center w-8 h-8 duration-300 rounded-full bg-white bg-opacity-40 border border-white
+        hover:bg-opacity-50 hover:-translate-y-0.5 ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+      <!-- left content -->
+      <div class="p-6 md:p-20 z-10">
+        <!-- top content -->
+        <h2 class="font-mono mb-5 text-4xl font-bold">Log in</h2>
+        <p class="text-black max-w-sm mb-12 font-sans md:text-gray-600 md:font-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reprehenderit quaerat minus quod veritatis
+          inventore.
+        </p>
+
+        <input type="text" class="w-full p-6 border border-gray-300 rounded-md outline-none transition-all duration-300
+          placeholder:font-sans placeholder:font-light
+          focus:shadow-inner focus:shadow-cyan-400  
+          " placeholder="Entrer your email!">
+
+        <!-- middle content -->
+        <div class="flex flex-col items-center justify-between mt-6 space-y-6 
+      md:flex-row md:space-y-0 md:space-x-6">
+          <p class="text-black font-bold
+          md:font-thin md:text-black md:text-cyan-900">Forgot password</p>
+          <button class="flex w-full bg-opacity-80 justify-center items-center p-6 space-x-4 font-sans font-bold text-white rounded-md shadow-sm px-9 bg-cyan-800 shadow-gray-900
+          duration-300
+          md:w-auto md:bg-cyan-700 md:shadow-cyan-200
+          hover:shadow-lg hover:shadow-gray-900 hover:bg-opacity-100  hover:-translate-y-0.5
+          md:hover:shadow-cyan-200">
+            <span class="text-white">Next</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+              fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <line x1="13" y1="18" x2="19" y2="12" />
+              <line x1="13" y1="6" x2="19" y2="12" />
+            </svg>
+          </button>
+        </div>
+        <hr class="mt-12 border-b border-b-gray-300">
+
+        <!-- bottom content -->
+        <p class="py-6 text-sm font-thin text-center text-white md:text-gray-400">
+          or log in with
+        </p>
+        <div class="flex flex-col space-x-0 space-y-6
+        md:flex-row md:space-x-4 md:space-y-0">
+          <button class="flex bg-white bg-opacity-30 items-center  justify-center py-2 space-x-3 border border-gray-300 rounded shadow-sm duration-300
+        hover:bg-opacity-50 hover:shadow-lg hover:-translate-y-0.5 
+        md:w-1/2">
+            <img src="images/google.png" alt="" class="w-9">
+            <span class="front-thin">Google</span>
+          </button>
+          <button class="flex bg-white bg-opacity-30 items-center  justify-center py-2 space-x-3 border border-gray-300 rounded shadow-sm duration-300
+          hover:bg-opacity-50 hover:shadow-lg hover:-translate-y-0.5 
+          md:w-1/2">
+            <img src="images/facebook.png" alt="" class="w-9">
+            <span class="front-thin">Facebook</span>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- right content -->
+      <img src="images/image.jpg" alt="" class="absolute opacity-80 rounded-md w-full h-full opacity-100 top-0 left-0 
+        md:relative md:w-[430px] md:opacity-100 md:rounded-l-none">
+    </div>
+  </div>
+</body>
+
+</html>
