@@ -11,11 +11,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
-    alias:{
-      '@scripts': path.join(__dirname, 'src/js'),
-      '@styles': path.join(__dirname, 'src/css'),
-      '@images': path.join(__dirname, 'src/images'),
-    }
   },
   module: { rules },
   plugins,

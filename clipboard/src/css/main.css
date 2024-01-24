@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+body{
+	background-image: url('../images/bg-header-desktop.png');
+	
+	@media (max-width: 576px) {
+		background-image: url('../images/bg-header-mobile.png');
+	}
+}
+
+.section-container{
+	@apply max-w-6xl mx-auto text-center px-10 my-20
+}
+
+.button-container{
+	@apply flex flex-col justify-center w-full space-y-6 text-xl text-white 
+	md:flex-row md:space-y-0 md:space-x-4 
+}
+
+.button{ 
+	@apply p-4 rounded-full shadow-lg duration-300 hover:opacity-80
+}
+
+.featured-p{
+	@apply max-w-md text-grayishBlue
+}
+
+.section-p{
+	@apply max-w-3xl text-xl leading-9 text-grayishBlue
+}
+
+@layer base {
+	h3{
+		@apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl
+	}
+	p{
+		@apply max-w-3xl mx-auto
+	}
+	h5{
+		@apply mb-6 text-2xl font-bold text-darkGrayishBlue
+	}
+}
+
+@layer components {
+	
+}
+
+@layer utilities {
+	
+}
