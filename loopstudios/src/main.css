@@ -74,9 +74,7 @@
 	@apply hidden w-full duration-300 md:block
 }
 
-.icons{
-	/* filter: invert(48%) sepia(24%) saturate(239%) hue-rotate(182deg) brightness(85%) contrast(84%); */
-}
+
 .facebook{
 	filter: invert(77%) sepia(26%) saturate(6983%) hue-rotate(230deg) brightness(53%) contrast(94%);
 }
@@ -101,7 +99,7 @@
 .pinterest:hover{
 	filter: invert(85%) sepia(80%) saturate(7345%) hue-rotate(1deg) brightness(107%) contrast(115%);
 }
-
+/* reference
 @layer utilities {
 	
-}
+} */
