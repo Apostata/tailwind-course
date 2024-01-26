@@ -10,10 +10,10 @@
 <body class="bg-no-repeat bg-contain">
 	<!-- hero section -->
 	<section id="hero">
-		<div class="section-container pt-16">
+		<div class="section-container pt-16 [&>p]:text-2xl">
 			<img src="<%=require('./images/logo.svg')%>" alt="" class="mx-auto my-16">
 			<h3>A history of everything you copy</h3>
-			<p class="section-p mb-10 text-2xl">Clipboard allows you to track and organize
+			<p class="section-p mb-10">Clipboard allows you to track and organize
 				everything you copy.
 				Instantly access your clipboard on all your devices.</p>
 			</p>
@@ -167,7 +167,7 @@
 	</section>
 	<footer class="bg-gray-50">
 		<div class="section-container">
-			<div class="flex flex-col items-center justify-between md:flex-row ">
+			<div class="flex flex-col items-center justify-between md:flex-row md:space-x-6">
 				<img src="<%=require('./images/logo.svg')%>" alt="" class="scale-50">
 				<!-- menus container  -->
 				<div
@@ -197,8 +197,30 @@
 						</li>
 
 					</ul>
+					<!-- social container -->
+					<ul class="flex justify-between w-32 py-1">
+						<li>
+							<a href="#" title="facebook">
+								<img src="<%=require('./images/icon-facebook.svg')%>" alt="facebook"
+									class="duration-300 icons facebook">
+							</a>
+						</li>
+
+						<li>
+							<a href="#" title="twitter">
+								<img src="<%=require('./images/icon-twitter.svg')%>" alt="twitter"
+									class="duration-300 icons twitter">
+							</a>
+						</li>
+						<li>
+							<a href="#" title="instagram">
+								<img src="<%=require('./images/icon-instagram.svg')%>" alt="instagram"
+									class="duration-300 icons instagram">
+							</a>
+						</li>
 				</div>
 			</div>
+		</div>
 		</div>
 	</footer>
 </body>

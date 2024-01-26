@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loop Studios</title>
+</head>
+
+<body>
+	<!-- hero section -->
+	<section id="hero" class="bg-no-repeat bg-cover bg-[center] sm:bg-[top_center] ">
+		<div class="section-container py-12">
+			<!-- navigation + logo -->
+			<nav class="flex flex-row item-center justify-between font-bold text-white">
+				<!-- logo -->
+				<img src="<%=require('./images/logo.svg')%>" alt="" class="z-40">
+				<ul class="hidden font-alata md:flex justify-evenly md:space-x-8">
+					<!-- item1 -->
+					<li class="group">
+						<a href="#">About</a>
+						<hr class="border-transparent duration-300
+						group-hover:border-b group-hover:border-blue-50">
+					</li>
+					<!-- item2 -->
+					<li class="group">
+						<a href="#">Carrers</a>
+						<hr class="border-transparent duration-300
+						group-hover:border-b group-hover:border-blue-50">
+					</li>
+					<!-- item3 -->
+					<li class="group">
+						<a href="#">Events</a>
+						<hr class="border-transparent duration-300
+						group-hover:border-b group-hover:border-blue-50">
+					</li>
+					<!-- item4 -->
+					<li class="group">
+						<a href="#">Products</a>
+						<hr class="border-transparent duration-300
+						group-hover:border-b group-hover:border-blue-50">
+					</li>
+					<!-- item5 -->
+					<li class="group">
+						<a href="#">Support</a>
+						<hr class="border-transparent duration-300
+						group-hover:border-b group-hover:border-blue-50">
+					</li>
+				</ul>
+				<!-- hamburger Button -->
+				<div class="md:hidden">
+					<button id="menu-btn" class="z-40 w-7 h-6 relative outline-none group">
+						<hr class="line top">
+						<hr class="line middle">
+						<hr class="line bottom">
+					</button>
+				</div>
+			</nav>
+			<!-- mobile menu -->
+			<ul id="menu-mobile"
+				class="z-20 absolute top-0 left-0 flex-col self-end hidden w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black">
+				<!-- item1 -->
+				<li><a href="#">About</a></li>
+				<!-- item2 -->
+				<li><a href="#">Carrers</a></li>
+				<!-- item3 -->
+				<li><a href="#">Events</a></li>
+				<!-- item4 -->
+				<li><a href="#">Products</a></li>
+				<!-- item5 -->
+				<li><a href="#">Support</a></li>
+			</ul>
+			<h1 class="max-w-lg mt-32 mb-32 p-4 font-sans text-3xl text-white bg-white bg-opacity-15 uppercase border-2
+			sm:text-4xl
+			md:p-10 md:m-32 md:mx-0 md:text-6xl">Impresive experiences that deliver</h1>
+		</div>
+	</section>
+	<!-- feature section -->
+	<section id="featured">
+		<div class="section-container relative flex flex-col  my-32 text-gray-900
+		md:flex-row md:px-0">
+			<img src="<%=require('./images/desktop/image-interactive.jpg')%>" alt="">
+			<div class="flex flex-col items-center top-48 pr-0 bg-white
+			md:absolute md:right-0 md:py-20 md:pl-20 md:items-start">
+				<h2 class="max-w-lg mt-10 mb-6 font-sans text-4xl text-center text-gray-900 uppercase 
+			md:text-5xl md:top-0 md:text-left">
+					The leader in interactive VR
+				</h2>
+				<p class="max-w-md text-center md:text-left">
+					Founded in 2011, Loopstudios has been producing world-class virtual reality
+					projects for some of the best companies around the globe. Our award-winning
+					creations have transformed businesses through digital experiences that bind to
+					their brand.
+				</p>
+			</div>
+		</div>
+	</section>
+	<!-- ceations section -->
+	<section id="creations">
+		<div class="section-container my-32  text-gray-900 md:px-0">
+			<div class="flex justify-center mb-20
+			md:justify-between">
+				<h2 class="text-2xl text-center uppercase md:text-left md:text-5xl">Our Creations</h2>
+				<button class="btn hidden md:block">See All</button>
+			</div>
+
+			<!-- items container1 -->
+			<ul class="item-container">
+				<!-- item1 -->
+				<li class="group item">
+					<!-- mobile image -->
+					<img src="<%=require('./images/mobile/image-deep-earth.jpg')%>" alt=""
+						class="w-full md:hidden duration-300">
+					<!-- desktop image -->
+					<img src="<%=require('./images/desktop/image-deep-earth.jpg')%>" alt="" class="desktop-image 
+				group-hover:scale-110">
+					<h5
+						class="z-10 absolute px-6 duration-300 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+						Deep Earth</h5>
+				</li>
+				<!-- item2 -->
+				<li class="group item">
+					<!-- mobile image -->
+					<img src="<%=require('./images/mobile/image-night-arcade.jpg')%>" alt=""
+						class="w-full md:hidden duration-300">
+					<!-- desktop image -->
+					<img src="<%=require('./images/desktop/image-night-arcade.jpg')%>" alt="" class="desktop-image 
+				group-hover:scale-110">
+					<h5
+						class="z-10 absolute px-6 duration-300 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+						Night Arcade</h5>
+				</li>
+				<!-- item3 -->
+				<li class="group item">
+					<!-- mobile image -->
+					<img src="<%=require('./images/mobile/image-soccer-team.jpg')%>" alt=""
+						class="w-full md:hidden duration-300">
+					<!-- desktop image -->
+					<img src="<%=require('./images/desktop/image-soccer-team.jpg')%>" alt="" class="desktop-image 
+				group-hover:scale-110">
+					<h5
+						class="z-10 absolute px-6 duration-300 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+						Soccer Team VR</h5>
+				</li>
+				<!-- item3 -->
+				<li class="group item">
+					<!-- mobile image -->
+					<img src="<%=require('./images/mobile/image-grid.jpg')%>" alt=""
+						class="w-full md:hidden duration-300">
+					<!-- desktop image -->
+					<img src="<%=require('./images/desktop/image-grid.jpg')%>" alt="" class="desktop-image 
+				group-hover:scale-110">
+					<h5
+						class="z-10 absolute px-6 duration-300 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+						The Grid</h5>
+				</li>
+			</ul>
+			<!-- items container2 -->
+			<ul class="item-container">
+				<!-- item1 -->
+				<li class="group item">
+					<!-- mobile image -->
+					<img src="<%=require('./images/mobile/image-from-above.jpg')%>" alt=""
+						class="w-full md:hidden duration-300">
+					<!-- desktop image -->
+					<img src="<%=require('./images/desktop/image-from-above.jpg')%>" alt="" class="desktop-image 
+				group-hover:scale-110">
+					<h5
+						class="z-10 absolute px-6 duration-300 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+						From Above VR</h5>
+				</li>
+				<!-- item2 -->
+				<li class="group item">
+					<!-- mobile image -->
+					<img src="<%=require('./images/mobile/image-pocket-borealis.jpg')%>" alt=""
+						class="w-full md:hidden duration-300">
+					<!-- desktop image -->
+					<img src="<%=require('./images/desktop/image-pocket-borealis.jpg')%>" alt="" class="desktop-image 
+				group-hover:scale-110">
+					<h5
+						class="z-10 absolute px-6 duration-300 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+						Pocket Borealis</h5>
+				</li>
+				<!-- item3 -->
+				<li class="group item">
+					<!-- mobile image -->
+					<img src="<%=require('./images/mobile/image-curiosity.jpg')%>" alt=""
+						class="w-full md:hidden duration-300">
+					<!-- desktop image -->
+					<img src="<%=require('./images/desktop/image-curiosity.jpg')%>" alt="" class="desktop-image 
+				group-hover:scale-110">
+					<h5
+						class="z-10 absolute px-6 duration-300 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+						The Curiosity</h5>
+				</li>
+				<!-- item4 -->
+				<li class="group item">
+					<!-- mobile image -->
+					<img src="<%=require('./images/mobile/image-fisheye.jpg')%>" alt=""
+						class="w-full md:hidden duration-300">
+					<!-- desktop image -->
+					<img src="<%=require('./images/desktop/image-fisheye.jpg')%>" alt="" class="desktop-image 
+				group-hover:scale-110">
+					<h5
+						class="z-10 absolute px-6 duration-300 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+						Make It Fisheye</h5>
+				</li>
+			</ul>
+			<!-- bottom button container -->
+			<div class="flex justify-center mt-10 md:hidden">
+				<button class="btn w-full">See All</button>
+			</div>
+		</div>
+	</section>
+	<footer class="bg-black">
+		<div class="container max-w-6xl py-10 mx-auto">
+			<div class="flex flex-col items-center mb-8 space-y-6 
+				md:flex-row md:space-y-0 md:justify-between md:items-start">
+				<!-- menu & logo -->
+				<div class="flex flex-col items-center space-y-8
+				md:items-start md:space-y-4">
+					<!-- logo -->
+					<div class="h-8">
+						<img src="<%=require('./images/logo.svg')%>" alt="" class="w-44 md:ml-3">
+					</div>
+					<!-- menu -->
+					<ul class="flex flex-col items-center space-y-4 font-bold text-white
+					md:flex-row md:space-y-0 md:space-x-6 md:ml-3">
+						<!-- item1 -->
+						<li class="h-10 group ">
+							<a href="#" class="pb-2 hover:border-b border-white">About</a>
+						</li>
+						<!-- item2 -->
+						<li class="h-10 group ">
+							<a href="#" class="pb-2 hover:border-b border-white">Careers</a>
+						</li>
+						<!-- item3 -->
+						<li class="h-10 group ">
+							<a href="#" class="pb-2 hover:border-b border-white">Events</a>
+						</li>
+						<!-- item4 -->
+						<li class="h-10 group ">
+							<a href="#" class="pb-2 hover:border-b border-white">Products</a>
+						</li>
+						<!-- item5 -->
+						<li class="h-10 group ">
+							<a href="#" class="pb-2 hover:border-b border-white">Support</a>
+						</li>
+					</ul>
+				</div>
+				<!-- social & copy -->
+				<div class="flex flex-col items-start justify-between space-y-4 text-gray-500">
+					<ul class="flex items-center justify-center mx-auto space-x-4 md:justify-end md:mx-0">
+						<!-- icon1 -->
+						<li class="h-8 group">
+							<a href="#">
+								<img src="<%=require('./images/icon-facebook.svg')%>" alt=""
+									class="h-6 icons facebook  duration-150 hover:scale-110">
+							</a>
+						</li>
+						<!-- icon2 -->
+						<li class="h-8 group">
+							<a href="#">
+								<img src="<%=require('./images/icon-twitter.svg')%>" alt=""
+									class="h-6 icons twitter  duration-150 hover:scale-110">
+							</a>
+						</li>
+						<!-- icon3 -->
+						<li class="h-8 group">
+							<a href="#">
+								<img src="<%=require('./images/icon-pinterest.svg')%>" alt=""
+									class="h-6 icons pinterest duration-150 hover:scale-110">
+							</a>
+						</li>
+						<!-- icon4 -->
+						<li class="h-8 group">
+							<a href="#">
+								<img src="<%=require('./images/icon-instagram.svg')%>" alt=""
+									class="h-6 icons instagram duration-150 hover:scale-110">
+							</a>
+						</li>
+					</ul>
+					<!-- copy -->
+					<div class="font-bold">
+						&copy; 2021 Loopstudios. All rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

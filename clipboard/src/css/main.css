@@ -31,7 +31,20 @@ body{
 }
 
 .section-p{
-	@apply max-w-3xl text-xl leading-9 text-grayishBlue
+	@apply max-w-3xl leading-9 text-grayishBlue text-xl
+}
+
+.icons{
+	filter: invert(58%) sepia(94%) saturate(345%) hue-rotate(123deg) brightness(88%) contrast(89%);
+}
+.facebook:hover{
+	filter: invert(7%) sepia(100%) saturate(7240%) hue-rotate(247deg) brightness(113%) contrast(144%);
+}
+.twitter:hover{
+	filter: invert(67%) sepia(16%) saturate(5983%) hue-rotate(170deg) brightness(103%) contrast(94%);
+}
+.instagram:hover{
+	filter: invert(39%) sepia(45%) saturate(5993%) hue-rotate(296deg) brightness(100%) contrast(95%);
 }
 
 @layer base {

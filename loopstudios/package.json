@@ -1,0 +1,28 @@
+{
+  "name": "tailwind-webpack",
+  "version": "1.0.0",
+  "description": "simple webpack configuration to work with tailwind",
+  "main": "index.ts",
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.9.1",
+    "dotenv": "^16.3.1",
+    "html-webpack-plugin": "^5.6.0",
+    "postcss": "^8.4.33",
+    "postcss-loader": "^8.0.0",
+    "style-loader": "^3.3.4",
+    "tailwindcss": "^3.4.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "author": "Rene Souza",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development"
+  }
+}

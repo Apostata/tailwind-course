@@ -1,0 +1,107 @@
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+#hero{
+	background-image: url('./images/mobile/image-hero.jpg');
+	
+	@media screen(sm) {
+		background-image: url('./images/desktop/image-hero.jpg');
+	}
+}
+
+#menu-mobile.open{
+	@apply flex
+}
+
+
+@layer base {
+	h5{
+		@apply z-10 absolute px-6 duration-300 w-52 bottom-4 md:bottom-8 md:px-10 
+	}
+}
+
+@layer components {
+	.btn{
+		@apply px-10 py-2 my-0 font-bold tracking-widest uppercase border-2 border-black font-alata duration-300
+		hover:bg-black hover:text-white
+	}
+
+	.line {
+		@apply w-full border-b-2 absolute top-0 left-0 origin-center rotate-0 translate-y-0 transition-all duration-300
+	}
+	.line.top{
+		@apply transform -translate-y-2 
+	}
+	.line.middle{
+		@apply transform translate-y-0 
+	}
+	.line.bottom{
+		@apply transform translate-y-2
+	}
+	.open .line.top{
+		@apply -rotate-45 translate-y-0
+	}
+	.open .line.middle{
+		@apply translate-x-3 w-0 translate-y-0
+	}
+	.open .line.bottom{
+		@apply rotate-45 translate-y-0
+	}
+}
+
+.section-container{
+	@apply container max-w-6xl mx-auto px-6
+}
+
+.item-container{
+	@apply flex flex-col justify-between w-full space-y-6 text-2xl text-white uppercase mb-6
+	md:flex-row md:space-y-0 md:space-x-8 
+}
+
+.item{
+	@apply relative overflow-hidden md:w-1/4
+}
+
+.item:after{
+	@apply content-[''] block absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-gray-900 hover:from-gray-50 hover:to-white hover:opacity-70
+}
+
+
+.desktop-image{
+	@apply hidden w-full duration-300 md:block
+}
+
+.icons{
+	/* filter: invert(48%) sepia(24%) saturate(239%) hue-rotate(182deg) brightness(85%) contrast(84%); */
+}
+.facebook{
+	filter: invert(77%) sepia(26%) saturate(6983%) hue-rotate(230deg) brightness(53%) contrast(94%);
+}
+.twitter{
+	filter: invert(67%) sepia(16%) saturate(5983%) hue-rotate(170deg) brightness(53%) contrast(94%);
+}
+.instagram{
+	filter: invert(39%) sepia(45%) saturate(5993%) hue-rotate(296deg) brightness(50%) contrast(95%);
+}
+.pinterest{
+	filter: invert(85%) sepia(80%) saturate(7345%) hue-rotate(1deg) brightness(57%) contrast(115%);
+}
+.facebook:hover{
+	filter: invert(77%) sepia(26%) saturate(6983%) hue-rotate(230deg) brightness(103%) contrast(94%);
+}
+.twitter:hover{
+	filter: invert(67%) sepia(16%) saturate(5983%) hue-rotate(170deg) brightness(103%) contrast(94%);
+}
+.instagram:hover{
+	filter: invert(39%) sepia(45%) saturate(5993%) hue-rotate(296deg) brightness(100%) contrast(95%);
+}
+.pinterest:hover{
+	filter: invert(85%) sepia(80%) saturate(7345%) hue-rotate(1deg) brightness(107%) contrast(115%);
+}
+
+@layer utilities {
+	
+}
