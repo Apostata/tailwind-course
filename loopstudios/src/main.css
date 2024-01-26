@@ -4,13 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
 
-#hero{
-	background-image: url('./images/mobile/image-hero.jpg');
-	
-	@media screen(sm) {
-		background-image: url('./images/desktop/image-hero.jpg');
-	}
-}
 
 #menu-mobile.open{
 	@apply flex
@@ -68,7 +61,6 @@
 .item:after{
 	@apply content-[''] block absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-gray-900 hover:from-gray-50 hover:to-white hover:opacity-70
 }
-
 
 .desktop-image{
 	@apply hidden w-full duration-300 md:block

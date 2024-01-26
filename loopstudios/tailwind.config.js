@@ -13,6 +13,10 @@ module.exports = {
       alata:['Alata'],
     },
     extend: {
+      backgroundImage: {
+        'hero-mobile': "url('./images/mobile/image-hero.jpg')",
+        'hero-desktop': "url('./images/desktop/image-hero.jpg')",
+      },
     },
   },
   plugins: [],
