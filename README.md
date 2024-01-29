@@ -97,3 +97,45 @@ npx tailwindcss build main.css -o output.css
 and add the output file to the `index.html` file
 
 [Tailwind reference] (https://github.com/bradtraversy/tailwind-sandbox/tree/main/tailwind-sandbox-starter)
+
+## Adding Line-Clamp plugin
+  Line clamp is a CSS property that allows you to truncate text at a specific number of lines.
+
+  This plugin is not included in the default tailwind installation, so you need to install it:
+
+  ```bash
+  npm i -D @tailwindcss/line-clamp
+  ```
+
+  then add it to the `tailwind.config.js` file:
+  ```js
+  module.exports = {
+    content: ["./src/**/*.{html,js}"],
+    theme: {
+      extend: {},
+    },
+    plugins: [
+      require('@tailwindcss/line-clamp'), //this line
+    ],
+  }
+  ```
+
+  then you can use it in your html file:
+
+  ```html
+  <div class="line-clamp-3">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+  </div>
+
+```
+
+In this sample the text will be truncated after 3 lines. Then to show the full text when the user clicks on the truncated text, you can add some javascript code or use the `details` tag or remove class in some brakepoint:
+
+```html
+<details>
+  <summary class="text-blue-500">Show more</summary>
+  <div class="line-clamp-3">
+    Lorem ipsum dolor sit amet conse
+  </div>
+</details>
+```
