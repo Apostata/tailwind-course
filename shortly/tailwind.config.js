@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const nesting =  require("tailwindcss/nesting")
 module.exports = {
   content: ["./src/**/*.{html,js,ts}"],
   theme: {
@@ -23,6 +24,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [nesting],
 }
 

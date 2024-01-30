@@ -27,7 +27,7 @@ npm i -D typescript ts-loader
 
 only adding tailwind to an existing project:
 ```bash
-npm i -D tailwindcss postcss autoprefixer
+npm i -D tailwindcss postcss autoprefixer postcss-nesting
 ```	
 
 After installing the dependencies, run the following command to create a `tailwind.config.js` file in the root of your project:
@@ -39,8 +39,10 @@ then create a `postcss.config.js` file in the root of your project and add the f
 ```js
 module.exports = {
   plugins: {
-	tailwindcss: {},
-	autoprefixer: {},
+    'postcss-import': {},
+		'tailwindcss/nesting': 'postcss-nesting', // to use nesting in tailwind
+		tailwindcss: {},
+		autoprefixer: {},
   },
 }
 ```

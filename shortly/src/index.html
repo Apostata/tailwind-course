@@ -16,9 +16,9 @@
 				<img src="<%=require('./images/logo.svg')%>" alt="">
 				<nav class="hidden lg:block">
 					<ul class="flex space-x-8 font-bold">
-						<li><a href="#" class="text-grayish-violet hover:text-very-dark-violet">Features</a></li>
-						<li><a href="#" class="text-grayish-violet hover:text-very-dark-violet">Pricing</a></li>
-						<li><a href="#" class="text-grayish-violet hover:text-very-dark-violet">Resources</a></li>
+						<li><a href="#" class="link">Features</a></li>
+						<li><a href="#" class="link">Pricing</a></li>
+						<li><a href="#" class="link">Resources</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -31,26 +31,26 @@
 			<!-- mobile menu -->
 			<div id="mobile-menu" class="absolute hidden p-6 rounded-lg bg-dark-violet right-6 left-6 top-20 z-50">
 				<ul class="flex flex-col items-center space-y-6">
-					<li class=" font-bold text-white rounded-sm"><a href=""
-							class="inline-block hover:text-cyan w-full">Features</a></li>
-					<li class=" font-bold text-white rounded-sm"><a href=""
-							class="inline-block hover:text-cyan w-full">Pricing</a></li>
-					<li class=" font-bold text-white rounded-sm"><a href=""
-							class="inline-block hover:text-cyan w-full">Resources</a>
+					<li><a href="">Features</a></li>
+					<li><a href="">Pricing</a></li>
+					<li><a href="">Resources</a>
 					</li>
-					<li class=" font-bold text-white rounded-sm border-t w-full border-gray-400 pt-2 hover:text-cyan ">
-						<a href="" class="inline-block w-full text-center">Login</a>
+					<li class="border-t w-full border-gray-400 pt-2 hover:text-cyan ">
+						<a href="" class=" text-center">Login</a>
 					</li>
-					<li class=" font-bold text-white rounded-sm-2 w-full"><a href=""
+					<li class=" rounded-sm-2 w-full">
+						<button href=""
 							class="text-center rounded-full bg-cyan w-full p-2 inline-block hover:opacity-80">Sign
-							Up</a></li>
+							Up</button>
+					</li>
 				</ul>
 			</div>
 
 			<!-- login/sign up -->
 			<div class="hidden items-center space-x-6 font-bold text-grayish-violet lg:flex">
-				<button class="text-very-dark-violet">Login</button>
-				<button class="px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70">Sign up</button>
+				<button class="text-very-dark-violet hover:text-cyan duration-300">Login</button>
+				<button class="px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70 duration-300">Sign
+					up</button>
 			</div>
 		</div>
 	</header>
@@ -65,7 +65,7 @@
 					Build your brand's recognition and get detailed insights on how your links are performing.
 				</p>
 				<a href="#"
-					class="block w-fit mx-auto py-5 px-10 text-2xl  font-bold text-white bg-cyan rounded-full lg:py-4 hover:opacity-70 lg:mx-0">Get
+					class="block w-fit mx-auto py-5 px-10 text-2xl  font-bold text-white bg-cyan rounded-full lg:py-4 hover:opacity-70 lg:mx-0 duration-300">Get
 					Started</a>
 			</div>
 			<figure class="mb-24 mx-auto md:w-128 lg:mb-0 lg:w-1/2">
@@ -88,39 +88,36 @@
 			<!-- links -->
 			<ul class="space-y-6">
 				<!-- link1 -->
-				<li
-					class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg space-y-2 md:flex-row md:space-y-0">
-					<p class="font-bold text-center text-very-dark-violet md:text-left">https://frontendmentor.io</p>
+				<li class="shorten-item">
+					<p>https://frontendmentor.io</p>
 					<div class="flex flex-col items-center justify-end space-x-4 
 					md:flex-row ">
 						<p class="font-bold text-cyan">https://rel.link/k4IyK</p>
 					</div>
-					<button class="p-2 px-8 text-white bg-cyan rounded-lg outline-none
-					hover:opcity-70">Copy</button>
+					<button class="btn_copy bg-cyan 
+					">Copy</button>
 				</li>
 				<!-- link2 -->
-				<li
-					class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg space-y-2 md:flex-row md:space-y-0">
-					<p class="font-bold text-center text-very-dark-violet md:text-left">
+				<li class="shorten-item">
+					<p>
 						https://twitter.com/frontendmentor</p>
 					<div class="flex flex-col items-center justify-end space-x-4
 					md:flex-row">
 						<p class="font-bold text-cyan">https://rel.link/gx0Xp9</p>
 					</div>
-					<button class="p-2 px-8 text-white bg-dark-violet rounded-lg outline-none
-					hover:opcity-70">Copy</button>
+					<button class="btn_copy bg-dark-violet 
+					">Copy</button>
 				</li>
 				<!-- link3 -->
-				<li
-					class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg space-y-2 md:flex-row md:space-y-0">
-					<p class="font-bold text-center text-very-dark-violet md:text-left">
+				<li class="shorten-item">
+					<p>
 						https://linkedin.com/frontend-mentor</p>
 					<div class="flex flex-col items-center justify-end space-x-4
 					md:flex-row ">
 						<p class="font-bold text-cyan">https://rel.link/gob3X9</p>
 					</div>
-					<button class="p-2 px-8 text-white bg-cyan rounded-lg outline-none
-					hover:opcity-70">Copy</button>
+					<button class="btn_copy bg-cyan 
+					">Copy</button>
 				</li>
 			</ul>
 		</div>

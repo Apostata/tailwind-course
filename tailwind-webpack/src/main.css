@@ -9,9 +9,7 @@
 }
 
 @layer components {
-	.btn-blue {
-		@apply px-4 py-2 rounded-xl my-2 font-bold bg-blue-500 hover:bg-blue-700 text-white [transition:background-color_0.3s_ease-in-out];
-	}
+	
 }
 
 @layer utilities {
@@ -22,7 +20,11 @@
 
 .content-area {
 	@apply bg-green-400;
-	height: theme(spacing[128])
+	height: theme(spacing[128]);
+
+	p{
+		@apply text-2xl font-bold text-red-300;
+	}
 }
 
 @media screen(xl) {
