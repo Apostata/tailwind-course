@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+.ficon{
+
+	@apply duration-300 hover:filter hover:invert-[80%] hover:sepia-[37%] hover:saturate-[7048%] hover:hue-rotate-[132deg] hover:brightness-[105%] hover:contrast-[105%]; 
+}
+
+@layer base {
+}
+
+@layer components {
+}
+
+@layer utilities {
+}
